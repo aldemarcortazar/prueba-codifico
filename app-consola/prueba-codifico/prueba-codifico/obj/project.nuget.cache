@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t87f8y0U0oHIBWfnSpNCYy1cSSl/BGJLhccmFw4LVlC4APuUTwCEvGss9J5ONQvH9ZwF44LDO1Wn44uRbs+/Pw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ALDEMAR\\source\\repos\\prueba-codifico\\prueba-codifico\\prueba-codifico.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ALDEMAR\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

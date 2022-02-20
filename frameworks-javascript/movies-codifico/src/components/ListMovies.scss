@@ -1,0 +1,35 @@
+$blue: #4285F4;
+
+.list-movies{
+    display: grid;
+    grid-template-areas: "header"
+                         "body"
+                         "order";
+    width: 80%;
+    margin: 4rem auto;
+    background-color: #ffffff;
+}
+
+.list-movies__header{
+    grid-area: "header";
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: $blue;
+    color: #ffffff;
+}
+
+.header__item{
+    justify-self: center;
+}
+
+.order-button{
+    background-color: $blue;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    width: 150px;
+    height: 4rem;
+    grid-area: order;
+    justify-self: end;
+    margin: 1rem;
+}

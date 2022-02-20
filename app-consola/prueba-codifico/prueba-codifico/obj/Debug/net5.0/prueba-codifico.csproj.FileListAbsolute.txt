@@ -1,0 +1,16 @@
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\bin\Debug\net5.0\prueba-codifico.exe
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\bin\Debug\net5.0\prueba-codifico.deps.json
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\bin\Debug\net5.0\prueba-codifico.runtimeconfig.json
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\bin\Debug\net5.0\prueba-codifico.runtimeconfig.dev.json
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\bin\Debug\net5.0\prueba-codifico.dll
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\bin\Debug\net5.0\ref\prueba-codifico.dll
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\bin\Debug\net5.0\prueba-codifico.pdb
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\prueba-codifico.csproj.AssemblyReference.cache
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\prueba-codifico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\prueba-codifico.AssemblyInfoInputs.cache
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\prueba-codifico.AssemblyInfo.cs
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\prueba-codifico.csproj.CoreCompileInputs.cache
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\prueba-codifico.dll
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\ref\prueba-codifico.dll
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\prueba-codifico.pdb
+C:\Users\ALDEMAR\source\repos\prueba-codifico\prueba-codifico\obj\Debug\net5.0\prueba-codifico.genruntimeconfig.cache
