@@ -1,8 +1,9 @@
-import { FormEvent } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import useForm from '../hooks/useForm';
 import { IMovie } from '../interfaces';
 import './form.scss';
 import { generateId } from '../helpers/index';
+import Messague from './Messague';
 
 interface IFormProps{
     movies: IMovie[];
@@ -19,71 +20,81 @@ export const initialData: IMovie = {
 const Form: React.FunctionComponent<IFormProps> = ( { movies, setMovies } ) => {
 
     const [ values, handleInputChange, reset ] = useForm<IMovie>( initialData );
+    const [ error, setError ] = useState<string>('');
     const { title, year, genre } = values;
+
+    useEffect(() => {
+        setTimeout(() => setError(''), 3000);
+    }, [ error ]);
 
     const handleSubmit = ( e: FormEvent ) => {
         e.preventDefault();
         if( Object.values( values ).includes('') ){
-            alert('todos los campos son obligatorios');
+            setError('Todos los campos son obligatorios');
+            return;
         }
         
         values.id = generateId();
         setMovies([ ...movies, values ]);
+        reset();
     };
 
 
     return(
-        <form 
-            className="form"
-            onSubmit={ handleSubmit }
-        >
+        <>
+            { error && <Messague  className='error' >  { error } </Messague> }
+            <form 
+                className="form"
+                onSubmit={ handleSubmit }
+            >
 
-            <h2 className='form__title'> Add New </h2>
-            
-            <div className='fild'>
-                <label className='fild__label' htmlFor="title">Titulo</label>
+                <h2 className='form__title'> Add New </h2>
+                
+                <div className='fild'>
+                    <label className='fild__label' htmlFor="title">Titulo</label>
+                    <input 
+                        type="text" 
+                        name="title"
+                        id='title' 
+                        placeholder="Titulo"
+                        className='form__input'
+                        value={ title }
+                        onChange={ handleInputChange }
+                    />
+                </div>
+
+                <div className='fild'>
+                    <label className='fild__label' htmlFor="title">Año</label>
+                    <input 
+                        type="number" 
+                        name="year" 
+                        placeholder="Año de estreno"
+                        className='form__input'
+                        value={ year }
+                        onChange={ handleInputChange }
+                    />
+                </div>
+
+                <div className='fild'>
+                    <label className='fild__label' htmlFor="title">Genero</label>
+                    <input 
+                        type="text" 
+                        name="genre" 
+                        placeholder="Genero"
+                        className='form__input'
+                        onChange={ handleInputChange }
+                        value={ genre }
+                    />
+                </div>
+
                 <input 
-                    type="text" 
-                    name="title"
-                    id='title' 
-                    placeholder="Titulo"
-                    className='form__input'
-                    value={ title }
-                    onChange={ handleInputChange }
+                    type="submit" 
+                    value="Añadir" 
+                    className='input__submit'
                 />
-            </div>
 
-            <div className='fild'>
-                <label className='fild__label' htmlFor="title">Año</label>
-                <input 
-                    type="number" 
-                    name="year" 
-                    placeholder="Año de estreno"
-                    className='form__input'
-                    value={ year }
-                    onChange={ handleInputChange }
-                />
-            </div>
-
-            <div className='fild'>
-                <label className='fild__label' htmlFor="title">Genero</label>
-                <input 
-                    type="text" 
-                    name="genre" 
-                    placeholder="Genero"
-                    className='form__input'
-                    onChange={ handleInputChange }
-                    value={ genre }
-                />
-            </div>
-
-            <input 
-                type="submit" 
-                value="Añadir" 
-                className='input__submit'
-            />
-
-        </form>
+            </form>
+        </>
     );
 
 }
